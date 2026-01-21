@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'com.sultan.tv'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.sultan.tv"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
@@ -24,9 +24,12 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     
-    // ExoPlayer for video
+    // ExoPlayer (Video Player)
     implementation 'com.google.android.exoplayer:exoplayer:2.19.1'
     
-    // OkHttp for downloading M3U
+    // Networking
     implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+    
+    // JSON Parsing (For Cookies)
+    implementation 'com.google.code.gson:gson:2.10.1'
 }
